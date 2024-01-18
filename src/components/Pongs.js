@@ -18,6 +18,7 @@ export default function InstancedPongs() {
 
   const ship = useStore(s => s.ship)
   const level = useStore(s => s.level)
+  const gameStarted = useStore(s => s.gameStarted);
 
   const dummy = useMemo(() => new Object3D(), [])
   const cubes = useMemo(() => {
@@ -111,8 +112,10 @@ export default function InstancedPongs() {
           ship.current.position.z - cube.z
         ).normalize()
 
-        cube.x += direction.x * delta * YOUR_SPEED_PARAMETER
-        cube.z += direction.z * delta * YOUR_SPEED_PARAMETER
+        
+        if (gameStarted)  {
+          cube.z += direction.z * delta * YOUR_SPEED_PARAMETER
+        }
 
         // Check for collision with ship
         const distanceToShip = distance2D(ship.current.position.x, ship.current.position.z, cube.x, cube.z)

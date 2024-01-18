@@ -8,6 +8,6 @@ import EnduranceWorld from './components/EnduranceWorld';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <EnduranceWorld bgColor='#141622' />
+    <EnduranceWorld bgColor='#ff2919' />
   </React.StrictMode>
 )

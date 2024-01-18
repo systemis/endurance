@@ -6,7 +6,6 @@ import { useStore } from '../state/useStore'
 
 // THREE components
 import Ship from './Ship'
-import Ground from './Ground'
 import Skybox from './Skybox'
 import Cubes from './Cubes'
 import Pongs from './Pongs'
@@ -45,9 +44,8 @@ export default function EnduranceWorld({ color, bgColor }) {
             {directionalLight.current && <primitive object={directionalLight.current.target} />}
           </Ship>
           <Walls />
-          {/* <Cubes /> */}
+          <Cubes />
           <Pongs />
-          <Ground groundColor={bgColor} />
           <KeyboardControls />
           <Effects />
           <GlobalColor />

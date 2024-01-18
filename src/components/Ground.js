@@ -45,11 +45,8 @@ function Ground() {
   useFrame((state, delta) => {
 
     if (ship.current) {
-      // Alternates moving the two ground planes when we've just passed over onto a new plane, with logic to make sure it only happens once per pass
-      // Checks if weve moved 10 meters into the new plane (-10) (so the old plane is no longer visible)
       if (Math.round(ship.current.position.z) + PLANE_SIZE * moveCounter.current + 10 < -10) {
 
-        // Ensures we only move the plane once per pass
         if (moveCounter.current === 1 || Math.abs(ship.current.position.z) - Math.abs(lastMove.current) <= 10) {
 
           // change the level every 4 moves or 4000 meters

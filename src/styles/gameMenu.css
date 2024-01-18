@@ -61,21 +61,21 @@
 }
 
 .game__score-gameover {
-  color: #fe2079;
+  color: #bd4902;
   font-family: 'Commando', Inconsolata, monospace;
   font-size: 12rem;
-  text-shadow: 0 0 10px #fe2079;
+  text-shadow: 0 0 10px #bd4902;
   margin: 0;
   margin-bottom: 2rem;
 }
 
 .game__score-title {
-  color: #fe2079;
+  color: #bd4902;
   font-family: 'Road Rage', Inconsolata, monospace;
   font-weight: 500;
   font-size: 4rem;
   text-align: center;
-  text-shadow: 0 0 40px #fe2079;
+  text-shadow: 0 0 40px #bd4902;
   margin: 0;
   margin-bottom: 1rem;
 }
@@ -86,7 +86,7 @@
   font-size: 10rem;
   font-weight: 500;
   text-align: center;
-  text-shadow: 0 0 20px #fe2079;
+  text-shadow: 0 0 20px #bd4902;
   margin: 0;
 }
 
@@ -94,7 +94,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  text-shadow: 0 0 20px #fe2079;
+  text-shadow: 0 0 20px #bd4902;
   margin-bottom: 2rem;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .game__score-number {
-  color: #fe2079;
+  color: #bd4902;
   margin-right: 1rem;
 }
 
@@ -133,8 +133,8 @@
   border: 0;
   font-family: 'Road Rage', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 6rem;
-  color: #fe2079;
-  text-shadow: 0 0 40px #fe2079;
+  color: #bd4902;
+  text-shadow: 0 0 40px #bd4902;
 }
 
 .game__menu-button-music {
@@ -145,8 +145,8 @@
   margin-top: 8rem;
   font-family: 'Commando', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2rem;
-  color: #fe2079;
-  text-shadow: 0 0 20px #fe2079;
+  color: #bd4902;
+  text-shadow: 0 0 20px #bd4902;
 }
 
 .game__menu-musicinfo {
@@ -154,8 +154,8 @@
   margin-bottom: 0.5rem;
   font-family: 'Commando', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.5rem;
-  color: #fe2079;
-  text-shadow: 0 0 20px #fe2079;
+  color: #bd4902;
+  text-shadow: 0 0 20px #bd4902;
 }
 
 .game__menu-controls {
@@ -163,8 +163,8 @@
   margin-bottom: 0.5rem;
   font-family: 'Road Rage', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2rem;
-  color: #fe2079;
-  text-shadow: 0 0 20px #fe2079;
+  color: #bd4902;
+  text-shadow: 0 0 20px #bd4902;
 }
 
 .game__menu-controls > p {
@@ -190,7 +190,7 @@
 
 .game__menu-button {
   font-size: 4rem;
-  text-shadow: 0 0 15px #fe2079;
+  text-shadow: 0 0 15px #bd4902;
 }
 
 .game__menu-button-music {
@@ -198,12 +198,12 @@
 }
 
 .game__menu-warning {
-  text-shadow: 0 0 15px #fe2079;
+  text-shadow: 0 0 15px #bd4902;
 }
 
 .game__score-gameover {
   font-size: 8rem;
-  text-shadow: 0 0 10px #fe2079;
+  text-shadow: 0 0 10px #bd4902;
 }
 
 .game__score-title {
@@ -270,7 +270,7 @@
 
 .game__menu-button {
   font-size: 3rem;
-  text-shadow: 0 0 15px #fe2079;
+  text-shadow: 0 0 15px #bd4902;
 }
 
 .game__menu-button-music {
@@ -279,22 +279,22 @@
 
 .game__menu-warning {
   font-size: 1rem;
-  text-shadow: 0 0 15px #fe2079;
+  text-shadow: 0 0 15px #bd4902;
 }
 
 .game__score-gameover {
   font-size: 4rem;
-  text-shadow: 0 0 10px #fe2079;
+  text-shadow: 0 0 10px #bd4902;
   margin-bottom: 1rem;
 }
 
 .game__score-title {
   font-size: 2rem;
-  text-shadow: 0 0 5px #fe2079;
+  text-shadow: 0 0 5px #bd4902;
 }
 
 .game__score {
   font-size: 4rem;
-  text-shadow: 0 0 10px #fe2079;
+  text-shadow: 0 0 10px #bd4902;
 }
 }

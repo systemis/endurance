@@ -13,26 +13,24 @@ export const LEVEL_SIZE = 6
 export const LEFT_BOUND = (-PLANE_SIZE / 2) * 0.6
 export const RIGHT_BOUND = (PLANE_SIZE / 2) * 0.6
 
+export const CIRCLE_CUBE_SIZE = 15
+export const CIRCLE_CUBE_AMOUNT = 20
+
 export const CUBE_SIZE = 20
-
 export const CUBE_AMOUNT = 60
-
 export const INITIAL_GAME_SPEED = 0.8
-
 export const GAME_SPEED_MULTIPLIER = 0.2
-
 export const WALL_RADIUS = 40
-
 export const COLORS = [
-  {
-    name: 'pink',
-    hex: '#ff69b4',
-    three: new THREE.Color(0xff2190)
-  },
   {
     name: 'red',
     hex: '#ff2919',
     three: new THREE.Color(0xff2919) //  0xff3021 #ff1e0d
+  },
+  {
+    name: 'pink',
+    hex: '#ff69b4',
+    three: new THREE.Color(0xff2190)
   },
   {
     name: 'orange',

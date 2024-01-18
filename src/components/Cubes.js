@@ -90,14 +90,15 @@ export default function InstancedCubes() {
       mesh.current.setMatrixAt(i, dummy.matrix)
     })
 
-    // Tells THREE to draw the updated matrix, I guess?
+    // THREE to draw the updated matrix
     mesh.current.instanceMatrix.needsUpdate = true
   })
 
   return (
     <instancedMesh ref={mesh} args={[null, null, CUBE_AMOUNT]}>
       <boxBufferGeometry args={[CUBE_SIZE, CUBE_SIZE, CUBE_SIZE]} />
-      <meshBasicMaterial ref={material} color={COLORS[0].three} />
+      {/* <circleBufferGeometry args={[CUBE_SIZE, CUBE_SIZE, CUBE_SIZE]} /> */}
+      <meshBasicMaterial ref={material} color={COLORS[2].three} />
     </instancedMesh>
   )
 }

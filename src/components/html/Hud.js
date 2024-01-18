@@ -98,7 +98,7 @@ export default function Hud() {
           <button onTouchStart={() => setRightPressed(true)} onTouchEnd={() => setRightPressed(false)} className={`control control__right ${right ? 'control-active' : ''}`}>{'>'}</button>
         </div>
       )}
-      <div className="bottomLeft">
+      <div className="bottomRight">
         <div className={`score ${showControls ? 'score__withcontrols' : ''}`}>
           <h3 className="score__title">LEVEL</h3>
           <h1 className="score__number">{level + 1}</h1>

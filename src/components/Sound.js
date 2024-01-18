@@ -4,7 +4,7 @@ import { useLoader } from '@react-three/fiber'
 
 import { useStore } from '../state/useStore'
 
-import speedUp from '../audio/speedup.mp3'
+import speedUp from '../audio/speedup2.mp3'
 
 function Sound() {
   const sound = useRef()

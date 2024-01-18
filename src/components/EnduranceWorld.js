@@ -9,8 +9,8 @@ import Ship from './Ship'
 import Ground from './Ground'
 import Skybox from './Skybox'
 import Cubes from './Cubes'
+import Pongs from './Pongs'
 import Walls from './Walls'
-import CubeTunnel from './CubeTunnel'
 import Effects from './Effects'
 
 // State/dummy components
@@ -45,8 +45,8 @@ export default function EnduranceWorld({ color, bgColor }) {
             {directionalLight.current && <primitive object={directionalLight.current.target} />}
           </Ship>
           <Walls />
-          <Cubes />
-          <CubeTunnel />
+          {/* <Cubes /> */}
+          <Pongs />
           <Ground groundColor={bgColor} />
           <KeyboardControls />
           <Effects />

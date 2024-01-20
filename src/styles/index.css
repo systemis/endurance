@@ -13,6 +13,7 @@ body,
   background: #141622;
   color: #141622;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {

@@ -37,65 +37,6 @@ export default function InstancedPongs() {
   const diamondStart = useMemo(() => -(level * PLANE_SIZE * LEVEL_SIZE) - PLANE_SIZE * (LEVEL_SIZE - 2.6), [level])
   const diamondEnd = useMemo(() => -(level * PLANE_SIZE * LEVEL_SIZE) - PLANE_SIZE * (LEVEL_SIZE), [level])
 
-  // useFrame((state, delta) => {
-  //   let isOutsideDiamond = false
-  //   if (ship.current) {
-  //     if (ship.current.position.z > diamondStart || ship.current.position.z < diamondEnd) {
-  //       isOutsideDiamond = true
-  //     }
-  //   }
-
-  //   cubes.forEach((cube, i) => {
-  //     if (ship.current) {
-  //       if (cube.z - ship.current.position.z > -15) { // No need to run the rather expensive distance function if the ship is too far away
-  //         if (cube.x - ship.current.position.x > -15 || cube.x - ship.current.position.x < 15) {
-  //           const distanceToShip = distance2D(ship.current.position.x, ship.current.position.z, cube.x, cube.z)
-
-  //           if (distanceToShip < 12) {
-  //             mutation.gameSpeed = 0
-  //             mutation.gameOver = true
-  //           }
-  //         }
-  //       }
-
-  //       if (cube.z - ship.current.position.z > 15) {
-  //         if (isOutsideDiamond) {
-  //           cube.z = ship.current.position.z - PLANE_SIZE + randomInRange(-200, 0)
-  //           cube.y = -CIRCLE_CUBE_SIZE
-  //           cube.x = randomInRange(negativeBound, positiveBound)
-  //         } else {
-  //           cube.z = ship.current.position.z - (PLANE_SIZE * 3.1) + randomInRange(-200, 0)
-  //           cube.y = -CIRCLE_CUBE_SIZE
-  //           cube.x = randomInRange(negativeBound, positiveBound)
-  //         }
-  //       }
-
-  //       if (cube.y < CIRCLE_CUBE_SIZE / 2) {
-  //         if (cube.y + delta * 100 > CIRCLE_CUBE_SIZE / 2) {
-  //           cube.y = CIRCLE_CUBE_SIZE / 2
-  //         } else {
-  //           cube.y += delta * 100
-  //         }
-  //       }
-  //     }
-
-  //     material.current.color = mutation.globalColor
-
-  //     dummy.position.set(
-  //       cube.x,
-  //       cube.y,
-  //       cube.z
-  //     )
-
-  //     // apply changes to dummy and to the instanced matrix
-  //     dummy.updateMatrix()
-  //     mesh.current.setMatrixAt(i, dummy.matrix)
-  //   })
-
-  //   // THREE to draw the updated matrix
-  //   mesh.current.instanceMatrix.needsUpdate = true
-  // })
-
   useFrame((state, delta) => {
     let isOutsideDiamond = false
     if (ship.current) {
